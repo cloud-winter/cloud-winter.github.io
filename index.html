@@ -130,8 +130,14 @@
     
     <!-- 封面 -->
     <div class="cover">
-        <h1>个人网站</h1>
-        <p>欢迎来到我的个人网站，这里展示了我的个人简介和项目信息。</p>
+        <div class="cover-content">
+            <h1 id="name">陈亚云</h1>
+            <p id="subtitle">电子科学与技术专业</p>
+            <div class="info">
+                <p id="email">2042246536@qq.com</p>
+                <p id="phone">13228549195</p>
+            </div>
+        </div>
         
         <!-- 导航按钮 -->
         <div class="nav-buttons">
@@ -157,9 +163,19 @@
         };
         
         function applyConfig(config) {
-            // 应用配置到页面
-            if (config.fontFamily) {
-                document.body.style.fontFamily = config.fontFamily;
+            // 应用字体设置
+            const chineseFont = config.chineseFont || "'STKaiti', '华文楷体'";
+            const englishFont = config.englishFont || "'Times New Roman', serif";
+            document.body.style.fontFamily = `${chineseFont}, ${englishFont}`;
+            
+            if (config.fontSize) {
+                document.body.style.fontSize = `${config.fontSize}px`;
+            }
+            if (config.fontColor) {
+                document.body.style.color = config.fontColor;
+            }
+            if (config.bgColor) {
+                document.body.style.backgroundColor = config.bgColor;
             }
         }
     </script>

@@ -210,31 +210,93 @@
         <!-- 配置表单 -->
         <div class="config-form">
             <form id="configForm">
-                <!-- 字体设置 -->
+                <!-- 中文字体设置 -->
                 <div class="form-group">
-                    <label class="form-label">字体设置</label>
+                    <label class="form-label">中文字体设置</label>
                     <div class="font-selector">
                         <div class="font-option">
-                            <input type="radio" id="font-default" name="fontFamily" value="'Times New Roman', '华文楷体', STKaiti, serif" checked>
-                            <label for="font-default">默认字体</label>
-                            <div class="font-preview" style="font-family: 'Times New Roman', '华文楷体', STKaiti, serif;">
-                                示例文本 Example Text
+                            <input type="radio" id="font-cn-msyh" name="chineseFont" value="'Microsoft YaHei', '微软雅黑'">
+                            <label for="font-cn-msyh">微软雅黑</label>
+                            <div class="font-preview" style="font-family: 'Microsoft YaHei', '微软雅黑';">
+                                示例文本
                             </div>
                         </div>
                         
                         <div class="font-option">
-                            <input type="radio" id="font-kai" name="fontFamily" value="'华文楷体', STKaiti, 'Times New Roman', serif">
-                            <label for="font-kai">华文楷体优先</label>
-                            <div class="font-preview" style="font-family: '华文楷体', STKaiti, 'Times New Roman', serif;">
-                                示例文本 Example Text
+                            <input type="radio" id="font-cn-song" name="chineseFont" value="'SimSun', '宋体'">
+                            <label for="font-cn-song">宋体</label>
+                            <div class="font-preview" style="font-family: 'SimSun', '宋体';">
+                                示例文本
                             </div>
                         </div>
                         
                         <div class="font-option">
-                            <input type="radio" id="font-times" name="fontFamily" value="'Times New Roman', serif, '华文楷体', STKaiti">
-                            <label for="font-times">Times New Roman优先</label>
-                            <div class="font-preview" style="font-family: 'Times New Roman', serif, '华文楷体', STKaiti;">
-                                示例文本 Example Text
+                            <input type="radio" id="font-cn-kai" name="chineseFont" value="'STKaiti', '华文楷体'" checked>
+                            <label for="font-cn-kai">华文楷体</label>
+                            <div class="font-preview" style="font-family: 'STKaiti', '华文楷体';">
+                                示例文本
+                            </div>
+                        </div>
+                        
+                        <div class="font-option">
+                            <input type="radio" id="font-cn-xingkai" name="chineseFont" value="'STXingkai', '华文行楷'">
+                            <label for="font-cn-xingkai">华文行楷</label>
+                            <div class="font-preview" style="font-family: 'STXingkai', '华文行楷';">
+                                示例文本
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 英文字体设置 -->
+                <div class="form-group">
+                    <label class="form-label">英文字体设置</label>
+                    <div class="font-selector">
+                        <div class="font-option">
+                            <input type="radio" id="font-en-helvetica" name="englishFont" value="Helvetica, Arial, sans-serif">
+                            <label for="font-en-helvetica">Helvetica</label>
+                            <div class="font-preview" style="font-family: Helvetica, Arial, sans-serif;">
+                                Example Text
+                            </div>
+                        </div>
+                        
+                        <div class="font-option">
+                            <input type="radio" id="font-en-arial" name="englishFont" value="Arial, Helvetica, sans-serif">
+                            <label for="font-en-arial">Arial</label>
+                            <div class="font-preview" style="font-family: Arial, Helvetica, sans-serif;">
+                                Example Text
+                            </div>
+                        </div>
+                        
+                        <div class="font-option">
+                            <input type="radio" id="font-en-verdana" name="englishFont" value="Verdana, Arial, sans-serif">
+                            <label for="font-en-verdana">Verdana</label>
+                            <div class="font-preview" style="font-family: Verdana, Arial, sans-serif;">
+                                Example Text
+                            </div>
+                        </div>
+                        
+                        <div class="font-option">
+                            <input type="radio" id="font-en-times" name="englishFont" value="'Times New Roman', serif" checked>
+                            <label for="font-en-times">Times New Roman</label>
+                            <div class="font-preview" style="font-family: 'Times New Roman', serif;">
+                                Example Text
+                            </div>
+                        </div>
+                        
+                        <div class="font-option">
+                            <input type="radio" id="font-en-georgia" name="englishFont" value="Georgia, serif">
+                            <label for="font-en-georgia">Georgia</label>
+                            <div class="font-preview" style="font-family: Georgia, serif;">
+                                Example Text
+                            </div>
+                        </div>
+                        
+                        <div class="font-option">
+                            <input type="radio" id="font-en-garamond" name="englishFont" value="Garamond, serif">
+                            <label for="font-en-garamond">Garamond</label>
+                            <div class="font-preview" style="font-family: Garamond, serif;">
+                                Example Text
                             </div>
                         </div>
                     </div>
@@ -282,7 +344,8 @@
         <div class="config-description">
             <h3>配置说明</h3>
             <ul>
-                <li>字体设置：您可以选择不同的字体组合，默认设置为中文使用华文楷体，英文使用Times New Roman</li>
+                <li>中文字体设置：您可以选择微软雅黑、宋体、华文楷体、华文行楷等中文字体</li>
+                <li>英文字体设置：您可以选择Helvetica、Arial、Verdana、Georgia、Garamond、Times New Roman等英文字体</li>
                 <li>字体大小：拖动滑块可以调整网站的默认字体大小</li>
                 <li>字体颜色：选择您喜欢的文本颜色</li>
                 <li>背景颜色：选择网站的背景颜色</li>
@@ -308,12 +371,19 @@
                 applyConfigToPage(parsedConfig);
                 applyConfigToPreview(parsedConfig);
             }
+            // 初始化时更新预览
+            updatePreview();
         };
         
         // 将配置应用到表单
         function applyConfigToForm(config) {
-            if (config.fontFamily) {
-                document.querySelector(`input[name="fontFamily"][value="${config.fontFamily}"]`).checked = true;
+            if (config.chineseFont) {
+                const chineseFontInput = document.querySelector(`input[name="chineseFont"][value="${config.chineseFont}"]`);
+                if (chineseFontInput) chineseFontInput.checked = true;
+            }
+            if (config.englishFont) {
+                const englishFontInput = document.querySelector(`input[name="englishFont"][value="${config.englishFont}"]`);
+                if (englishFontInput) englishFontInput.checked = true;
             }
             if (config.fontSize) {
                 document.getElementById('fontSize').value = config.fontSize;
@@ -329,9 +399,11 @@
         
         // 将配置应用到页面
         function applyConfigToPage(config) {
-            if (config.fontFamily) {
-                document.body.style.fontFamily = config.fontFamily;
-            }
+            // 应用字体设置
+            const chineseFont = config.chineseFont || "'STKaiti', '华文楷体'";
+            const englishFont = config.englishFont || "'Times New Roman', serif";
+            document.body.style.fontFamily = `${chineseFont}, ${englishFont}`;
+            
             if (config.fontSize) {
                 document.body.style.fontSize = `${config.fontSize}px`;
             }
@@ -346,14 +418,21 @@
         // 将配置应用到预览区域
         function applyConfigToPreview(config) {
             const preview = document.getElementById('previewContent');
-            if (config.fontFamily) {
-                preview.style.fontFamily = config.fontFamily;
-            }
+            
+            // 应用字体设置
+            const chineseFont = config.chineseFont || "'STKaiti', '华文楷体'";
+            const englishFont = config.englishFont || "'Times New Roman', serif";
+            preview.style.fontFamily = `${chineseFont}, ${englishFont}`;
+            
             if (config.fontSize) {
                 preview.style.fontSize = `${config.fontSize}px`;
             }
             if (config.fontColor) {
                 preview.style.color = config.fontColor;
+            }
+            // 添加背景颜色到预览
+            if (config.bgColor) {
+                preview.style.backgroundColor = config.bgColor;
             }
         }
         
@@ -367,32 +446,40 @@
         document.getElementById('fontColor').addEventListener('input', updatePreview);
         document.getElementById('bgColor').addEventListener('input', updatePreview);
         
-        // 字体选择变化事件
-        document.querySelectorAll('input[name="fontFamily"]').forEach(radio => {
+        // 中文字体选择变化事件
+        document.querySelectorAll('input[name="chineseFont"]').forEach(radio => {
+            radio.addEventListener('change', updatePreview);
+        });
+        
+        // 英文字体选择变化事件
+        document.querySelectorAll('input[name="englishFont"]').forEach(radio => {
             radio.addEventListener('change', updatePreview);
         });
         
         // 更新预览
         function updatePreview() {
-            const fontFamily = document.querySelector('input[name="fontFamily"]:checked').value;
+            const chineseFont = document.querySelector('input[name="chineseFont"]:checked').value;
+            const englishFont = document.querySelector('input[name="englishFont"]:checked').value;
             const fontSize = document.getElementById('fontSize').value;
             const fontColor = document.getElementById('fontColor').value;
             const bgColor = document.getElementById('bgColor').value;
             
-            applyConfigToPreview({ fontFamily, fontSize, fontColor, bgColor });
+            applyConfigToPreview({ chineseFont, englishFont, fontSize, fontColor, bgColor });
         }
         
         // 表单提交事件
         document.getElementById('configForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const fontFamily = document.querySelector('input[name="fontFamily"]:checked').value;
-            const fontSize = document.getElementById('fontSize').value;
+            const chineseFont = document.querySelector('input[name="chineseFont"]:checked').value;
+            const englishFont = document.querySelector('input[name="englishFont"]:checked').value;
+            const fontSize = parseInt(document.getElementById('fontSize').value); // 转换为数字类型
             const fontColor = document.getElementById('fontColor').value;
             const bgColor = document.getElementById('bgColor').value;
             
             const config = {
-                fontFamily,
+                chineseFont,
+                englishFont,
                 fontSize,
                 fontColor,
                 bgColor
@@ -405,14 +492,15 @@
             applyConfigToPage(config);
             
             // 显示保存成功提示
-            alert('配置已保存！');
+            alert('配置已保存！设置将应用到所有页面。');
         });
         
         // 表单重置事件
         document.getElementById('configForm').addEventListener('reset', function() {
             // 重置为默认值
             const defaultConfig = {
-                fontFamily: '"Times New Roman", "华文楷体", STKaiti, serif',
+                chineseFont: "'STKaiti', '华文楷体'",
+                englishFont: "'Times New Roman', serif",
                 fontSize: '16',
                 fontColor: '#333333',
                 bgColor: '#f9f9f9'
@@ -421,6 +509,9 @@
             applyConfigToForm(defaultConfig);
             applyConfigToPage(defaultConfig);
             applyConfigToPreview(defaultConfig);
+            
+            // 清除本地存储
+            localStorage.removeItem('siteConfig');
         });
     </script>
 </body>
